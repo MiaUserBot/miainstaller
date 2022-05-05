@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "MiaUserbot_Deployer"
+name = "FlashUserbot_Deployer"
 version = "1.0"
-description = "Automatic Deploy MiaUserBot to Heroku"
-authors = ["Mia"]
+description = "Automatic Deploy FlashUserBot to Heroku"
+authors = ["Flash"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
