@@ -28,7 +28,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "miauserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "flashuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -61,9 +61,9 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
     try:
         Client = TelegramClient(StringSession(stri), aid, ahash)
         await Client.start()
-        ms = await Client.send_message('me',LANG['MIAUSERBOT'])
+        ms = await Client.send_message('me',LANG['FLASHUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='MiaUserBot BotLog',
+            title='FLASH BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @MiaUserBot"
+    config['DEFAULT_BIO'] = "✨ @FlashuserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -174,17 +174,14 @@ if __name__ == "__main__":
     if Sonra == True:
         console.clear()
         Cevap = ""
-        while not Cevap == "5":
-            if Cevap == "2":
+        while not Cevap == "4":
+            if Cevap == "1":
                 config['LOGSPAMMER'] = "True"
                 basarili(LANG['SUCCESS_LOG'])
-            elif Cevap == "1":
-                config['OTOMATIK_KATILMA'] = "False"
-                basarili(LANG['SUCCESS_SUP'])
-            elif Cevap == "3":
+            elif Cevap == "2":
                 config['PM_AUTO_BAN'] = "True"
                 basarili(LANG['SUCCESS_PMAUTO'])
-            elif Cevap == "4":
+            elif Cevap == "3":
                 whatisyourname = str(soru(LANG['WHAT_IS_YOUR_NAME']))
                 config['DEFAULT_NAME'] = whatisyourname
                 basarili(LANG['SUCCESS_DEFAULTNAME'])
@@ -193,7 +190,7 @@ if __name__ == "__main__":
 
 
             
-            bilgi(f"[1] {LANG['NO_SUP']}\n[2] {LANG['NO_LOG']}\n\n[3] {LANG['NO_PMAUTO']}\n\n[4] {LANG['NO_DEFAULTNAME']}\n\n[5] {LANG['CLOSE']}")
+            bilgi(f"[1] {LANG['NO_LOG']}\n\n[2] {LANG['NO_PMAUTO']}\n\n[3] {LANG['NO_DEFAULTNAME']}\n\n[4] {LANG['CLOSE']}")
             
-            Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4", "5"], default="5")
+            Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4"], default="4")
         basarili(LANG['SEEYOU'])
