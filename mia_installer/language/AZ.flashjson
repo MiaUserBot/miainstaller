@@ -1,5 +1,5 @@
 {
-    "__MIAJSON__": true,
+    "__FLASHJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "AZ",
     "AUTHOR": "Senan Oğuz / William Shakespeare",
@@ -29,7 +29,7 @@
             "POSTGRE": "(i) PostgreSQL yüklənir...",
             "SUCCESS_POSTGRE": "(✓) PostgreSql Yükləndi!",
             "AUTO_BOTLOG": "Bu qrup avtomatik olaraq quraşdırılma zamanı @MiaUserBot ilə yaradılmışdır.",
-            "MIAUSERBOT": "✨ Mia 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 𝚂𝚎𝚝𝚞𝚙✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n`🎉 Quraşdırma uğurla başa çatdı! Botu .alive əmri ilə sınayın!\n\n🙃 .mia əmri ilə bütün əmrlərə baxa bilərsiniz və probleminiz olduqda` **@epicsupport**` qrupundan soruşa bilərsiniz. `",
+            "FLASHUSERBOT": "✨ Mia 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 𝚂𝚎𝚝𝚞𝚙✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n`🎉 Quraşdırma uğurla başa çatdı! Botu .alive əmri ilə sınayın!\n\n🙃 .mia əmri ilə bütün əmrlərə baxa bilərsiniz və probleminiz olduqda` **@epicsupport**` qrupundan soruşa bilərsiniz. `",
             "DONT_LEAVE": "**BU GRUPDAN ÇIXMAYIN, ƏKSİ TƏQDİRDƏ SNİPS MODULLARINIZ İŞLƏMƏZ!**",
             "AFTER_INSTALL": "Quraşdırılma sonrası prosedurunu başlatmaq istəyirsiniz?",
             "BOTLOG": "BotLog Qrupu Yaradın",
