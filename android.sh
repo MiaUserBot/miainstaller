@@ -36,13 +36,13 @@ echo -e $MESAJ
 echo -e $BOSLUQ
 echo "Dosyaları yüklüyorum..."
 echo -e $BOSLUQ
-rm -rf flashinstaller
+rm -rf miainstaller
 git clone https://github.com/MiaUserBot/miainstaller
 clear
 echo -e $BOSLUK
 echo -e $MESAJ
 echo -e $BOSLUQ
 echo -e $BOSLUQ
-cd bossinstaller
+cd miainstaller
 pip install -r requirements.txt
 python -m mia_installer
