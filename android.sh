@@ -1,4 +1,4 @@
-Flashuserbot+="\nFlash otomatik kurulum✨"
+Flashuserbot+="\nFlashϟ otomatik kurulum✨"
 MESAJ+="\n "
 MESAJ+="\n✅ Official channel: @flashuserbots"
 MESAJ+="\n✅ Yardım Grupumuz: @flashsupports"
@@ -36,8 +36,8 @@ echo -e $MESAJ
 echo -e $BOSLUQ
 echo "Dosyaları yüklüyorum..."
 echo -e $BOSLUQ
-rm -rf bossinstaller
-git clone https://github.com/bossuserb/miainstaller
+rm -rf flashinstaller
+git clone https://github.com/MiaUserBot/miainstaller
 clear
 echo -e $BOSLUK
 echo -e $MESAJ
